@@ -1,0 +1,41 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+    import java.util.Arrays;
+
+    class Main {
+        // implement me
+        private static void rotate(int[] arr, int steps) {
+
+        }
+
+        // do not change code below
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            int[] arr = Arrays.stream(scanner.nextLine().split(" "))
+                    .mapToInt(Integer::parseInt)
+                    .toArray();
+
+            int steps = Integer.parseInt(scanner.nextLine());
+
+            rotate(arr, steps);
+
+            for (int i : arr) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/3663#comment
+status: Failed
+feedback:
+  message: "Failed test #1 of 9. Runtime error\n\nThis is a sample test from the problem\
+    \ statement!\n\nTest input:\n1 2 3 4 5\n1\nCorrect output:\n5 1 2 3 4\n\nYour\
+    \ code output:\n\n\nError:\nException in thread \"main\" java.util.NoSuchElementException:\
+    \ No line found\n\tat java.base/java.util.Scanner.nextLine(Scanner.java:1651)\n\
+    \tat Main.rotate(Main.java:8)\n\tat Main.main(Main.java:36)\n"
+  time: "Wed, 04 Jan 2023 03:00:21 UTC"
+record: -1
